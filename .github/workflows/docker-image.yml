@@ -20,7 +20,7 @@ jobs:
       id: build-image
       uses: redhat-actions/buildah-build@v2
       with:
-        image: my-app
+        image: jenkins-agent-builder
         tags: latest ${{ github.sha }}
         containerfiles: |
           ./Dockerfile
